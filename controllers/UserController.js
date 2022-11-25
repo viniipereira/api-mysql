@@ -1,5 +1,5 @@
 
-const db = require("../database/connection.js")
+const db = require("../database/connectionMysql.js")
 
 class UserController {
     novoUsuario(req,res) {
