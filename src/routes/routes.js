@@ -14,8 +14,11 @@ const usuarioController = require('../controllers/UserController.js');
 
 router.get('/usuarios',usuarioController.listarUsuarios);
 router.get('/usuario/:id',usuarioController.listarUmUsuario);
+
 router.post('/novoUsuario', usuarioController.novoUsuario);
-router.put('/usuario/:id',usuarioController.atualizarUsuario)
-router.delete('/usuario/:id',usuarioController.removerUsuario)
+
+router.put('/usuario/:id',usuarioController.atualizarUsuario);
+
+router.delete('/usuario/:id',usuarioController.removerUsuario);
 
 module.exports = router;
