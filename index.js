@@ -4,6 +4,7 @@ const router = require('./src/routes/routes.js')
 
 const app = express();
 const PORT = 5000;
+const HOST = '0.0.0.0';
 
 app.use(express.json());
 app.use(bodyParser.json());
@@ -14,6 +15,4 @@ app.get('/',(req,res) => {
     res.send("Bem vindo a nossa api  com MYSQL :)");
 })
 
-app.listen(PORT, (req,res) => {
-    console.log("servidor rodando na porta: " + PORT);
-})
+app.listen(PORT, HOST)
